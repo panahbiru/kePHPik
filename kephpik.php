@@ -78,12 +78,6 @@ Class Controller {
         return array_to_objects($CONFIG);
     }
 }
-Class Db {
-    public function __construct() {
-        $__db = new ezSQL_mysqli(DBUSER, DBPASSWD, DBNAME, DBHOST);
-        $this->db = $__db;
-    }
-}
 Class Session {
     public function setValue($name, $value = '') {
         if (\is_array($name)) {
