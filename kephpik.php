@@ -57,7 +57,12 @@ Class Controller {
                 extract($data, EXTR_SKIP);
             }
             try {
-                require_once PATH . 'views/' . $file . '.php';
+                ob_start();
+                include PATH . 'views/' . $file . '.php';
+                $return = ob_get_contents();
+                ob_end_clean();
+
+                return $return;
             }
             catch(Exception $e) {
                 throw new Exception($e->getMessage());
