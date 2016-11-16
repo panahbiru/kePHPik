@@ -6,7 +6,7 @@ Class Core {
         $request = parse_uri($_SERVER['PATH_INFO']);
         $controller = ucfirst($request[0]);
         
-        if(isset($_POST))
+        if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             $method = 'post'.ucfirst($request[1]);
         }else{
@@ -14,7 +14,7 @@ Class Core {
         }
 
         if (empty($controller)) $controller = 'Home';
-        if (empty($method)) $method = 'index';
+        if (empty($method) || $method== 'get') $method = 'getIndex';
         if (file_exists(PATH . 'controllers/' . $controller . '.php')) {
             include PATH . 'controllers/' . $controller . '.php';
             $this->$controller = new $controller;
@@ -62,7 +62,7 @@ Class Controller {
                 $return = ob_get_contents();
                 ob_end_clean();
 
-                return $return;
+                print( $return );
             }
             catch(Exception $e) {
                 throw new Exception($e->getMessage());
