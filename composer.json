@@ -1,0 +1,18 @@
+{
+    "name": "panahbiru/kephpik",
+    "description": "Little buggy flying framework",
+    "keywords": ["php", "kephik"],
+    "homepage": "http://kephpik.emka.web.id/",
+    "type": "project",
+    "license": "MIT license",
+    "authors": [
+        {
+            "name": "Luthfi Emka",
+            "email": "luthfi@emka.web.id"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "minimum-stability": "dev"
+}
