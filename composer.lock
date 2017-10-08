@@ -1,0 +1,269 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "df0511fb5f94931461b05f1fd77445de",
+    "content-hash": "2dfb8cdc30b27c3ea9343f1791dd0963",
+    "packages": [
+        {
+            "name": "filp/whoops",
+            "version": "2.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "ffbbd2c06c64b08fb47974eed5dbce4ca2bb0eec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/ffbbd2c06c64b08fb47974eed5dbce4ca2bb0eec",
+                "reference": "ffbbd2c06c64b08fb47974eed5dbce4ca2bb0eec",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0",
+                "psr/log": "^1.0.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "^4.8 || ^5.0",
+                "symfony/var-dumper": "^2.6 || ^3.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+                "whoops/soap": "Formats errors as SOAP responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Whoops\\": "src/Whoops/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://filp.github.io/whoops/",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "whoops",
+                "zf2"
+            ],
+            "time": "2017-08-03 18:23:40"
+        },
+        {
+            "name": "jv2222/ezsql",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezSQL/ezSQL.git",
+                "reference": "3e75543f4a0dc24a32e180cd62362511029c2436"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezSQL/ezSQL/zipball/3e75543f4a0dc24a32e180cd62362511029c2436",
+                "reference": "3e75543f4a0dc24a32e180cd62362511029c2436",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "cubrid/ez_sql_cubrid.php",
+                    "pdo/ez_sql_pdo.php",
+                    "postgresql/ez_sql_postgresql.php",
+                    "mysql/ez_sql_mysql.php",
+                    "mysqli/ez_sql_mysqli.php",
+                    "sqlsrv/ez_sql_sqlsrv.php",
+                    "oracle8_9/ez_sql_oracle8_9.php",
+                    "sqlite/ez_sql_sqlite.php",
+                    "shared/ez_sql_core.php",
+                    "mssql/ez_sql_mssql.php",
+                    "sybase/ez_sql_sybase.php",
+                    "codeigniter/Ezsql_codeigniter.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Vincent",
+                    "email": "webmaster@justinvincent.com"
+                }
+            ],
+            "description": "PHP class to make interacting with a database ridiculusly easy.",
+            "time": "2017-08-08 07:44:11"
+        },
+        {
+            "name": "mike42/escpos-php",
+            "version": "v1.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mike42/escpos-php.git",
+                "reference": "bb24755ef3d444fcc7aa6af70bd8967fc391d760"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mike42/escpos-php/zipball/bb24755ef3d444fcc7aa6af70bd8967fc391d760",
+                "reference": "bb24755ef3d444fcc7aa6af70bd8967fc391d760",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "~3.0|~4.0|~5.0|~6.0",
+                "phpunit/phpunit": "4.8.*",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "suggest": {
+                "ext-gd": "Used for image printing if present.",
+                "ext-imagick": "Will be used for image printing if present. Required for PDF printing or use of custom fonts.",
+                "guzzlehttp/guzzle": "Allows the use of the ApiConnector to send print jobs over HTTP."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mike42\\": "src/Mike42"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Billington",
+                    "email": "michael.billington@gmail.com"
+                }
+            ],
+            "description": "PHP receipt printer library for use with ESC/POS-compatible thermal and impact printers",
+            "homepage": "https://github.com/mike42/escpos-php",
+            "keywords": [
+                "ESC-POS",
+                "driver",
+                "escpos",
+                "print",
+                "receipt"
+            ],
+            "time": "2017-05-18 10:29:56"
+        },
+        {
+            "name": "ngfw/recipe",
+            "version": "v1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ngfw/Recipe.git",
+                "reference": "6fad8ced007dcb0fae7a15d36dad930ccfc8e460"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ngfw/Recipe/zipball/6fad8ced007dcb0fae7a15d36dad930ccfc8e460",
+                "reference": "6fad8ced007dcb0fae7a15d36dad930ccfc8e460",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.7.19"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ngfw\\": "src/ngfw/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nick G",
+                    "email": "gejadze@gmail.com"
+                }
+            ],
+            "description": "Small Collection of useful PHP functions",
+            "time": "2017-05-14 20:32:19"
+        },
+        {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10 12:19:37"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "jv2222/ezsql": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": []
+}
