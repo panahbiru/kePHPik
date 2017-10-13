@@ -7,7 +7,7 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <table class="table table-bordered table-responsive">
+        <table class="table table-bordered table-responsive" style="font-size: 0.8em;">
         <thead>
             <tr>
                 <th>No</th>

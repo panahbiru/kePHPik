@@ -27,8 +27,9 @@ Class Home extends Controller
 
     public function getTransaksi()
     {
-        $data['conf']           = $this->conf();
-        $data['list_transaksi']    = $this->core->get_all_transaksi();
+        $data['conf']               = $this->conf();
+        $data['list_transaksi']     = $this->core->get_all_transaksi();
+        $data['list_produk']        = (array) $this->core->get_all_produk();
         $this->output('header', $data);
         $this->output('transaksi', $data);
         $this->output('footer', $data);
