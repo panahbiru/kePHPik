@@ -14,9 +14,7 @@
     "require": {
         "php": ">=5.4.0",
         "filp/whoops": "^2.1",
-        "ngfw/recipe": "^1.2",
-        "jv2222/ezSQL": "dev-master",
-        "mike42/escpos-php": "^1.5"
+        "jv2222/ezSQL": "dev-master"
     },
     "minimum-stability": "dev"
 }
