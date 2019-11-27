@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "filp/whoops": "^2.1",
+        "filp/whoops": "^2.1"
     },
     "minimum-stability": "dev"
 }
